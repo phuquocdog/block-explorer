@@ -3,7 +3,7 @@
     <b-container class="px-sm-3">
       <b-navbar-brand>
         <nuxt-link to="/" class="navbar-brand" title="Reef block explorer">
-          <img class="logo" src="/img/polkastats_logo_dark@2x.png" />
+          <img class="logo" src="/img/logo.png" />
         </nuxt-link>
       </b-navbar-brand>
       <a
@@ -12,7 +12,7 @@
         target="_blank"
         class="fiat mh-2"
       >
-        <strong>{{ network.tokenSymbol }}</strong> ${{ USDConversion }} ({{
+        <strong>{{ network.tokenSymbol }}</strong> ${{ '0.0001' }} ({{
           USD24hChange
         }}%)
       </a>
@@ -48,10 +48,10 @@
         </b-navbar-nav>
         <b-dropdown class="my-md-2 ml-md-2 network" variant="primary2">
           <template #button-content>
-            <img
+            <!-- <img
               class="network-logo"
               :src="`/img/networks/icons/${network.id}.svg`"
-            />
+            /> -->
             {{ network.name }}
           </template>
           <b-dropdown-item href="https://kusama.polkastats.io">

@@ -411,6 +411,44 @@ export default {
           console.log('------>', error)
         },
       },
+      account_search: {
+        query: gql`
+          query account($accountId: String, $perPage: Int!, $offset: Int!) {
+            account(
+              limit: $perPage
+              offset: $offset
+              where: { account_id: { _eq: $accountId } }
+              order_by: { free_balance: desc }
+            ) {
+              account_id
+              identity_display
+              identity_display_parent
+              available_balance
+              free_balance
+              locked_balance
+            }
+          }
+        `,
+        variables() {
+          return {
+            accountId: this.filter ? this.filter : undefined,
+            perPage: this.perPage,
+            offset: (this.currentPage - 1) * this.perPage,
+          }
+        },
+        result({ data }) {
+          this.accounts = data.account
+          if (this.filter) {
+            this.totalRows = this.accounts.length
+          } else {
+            this.totalRows = this.agggregateRows
+          }
+          this.loading = false
+        },
+        error(error) {
+          console.log('------>', error)
+        },
+      },
       count: {
         query: gql`
           subscription count {

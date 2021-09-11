@@ -8,7 +8,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'PolkaStats | Polkadot block explorer',
+    title: 'Phu Quoc Dog | Phu Quoc Dog block explorer',
     htmlAttrs: {
       lang: 'en',
     },
@@ -129,4 +129,11 @@ export default {
       },
     ],
   },
+
+  image: {
+    provider: 'wordpress',
+    wordpress: {
+      baseURL: 'https://i0.wp.com/phuquoc.dog/'
+    }
+  }
 }
