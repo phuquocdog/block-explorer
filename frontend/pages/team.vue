@@ -1,12 +1,7 @@
 <template>
   <b-container class="pt-4">
     <b-row class="center pt-4">
-      <b-card title="Team ColmenaLabs">
-        Team ColmenaLabs has a vast expertise in blockchain technologies,
-        conducting Ethereum meetups since earlier 2016. ColmenaLabs is also one
-        of the most active blockchain communities of Spain. Our previous
-        blockchain experience has facilitated our landing in the Proof of Stake
-        era, where we are participating on many projects.
+      <b-card title="Team ColmenaLabs">We have development experience, including front-end development, back-end development, Devops, etc. We have participated in the Vietnam blockchain. We has in-depth research and accumulation of blockchain technology.
       </b-card>
     </b-row>
     <b-row class="pt-4">
@@ -40,38 +35,25 @@ export default {
     return {
       members: [
         {
-          name: 'Mario',
-          picture: '/img/team/Mario.jpg',
-          description:
-            'Founder & dev lead, full stack developer / Susbtrate lover',
+          name: 'Thien Tran',
+          picture: '/img/team/thientran.jpg',
+          description:'Founder & dev lead, full stack developer / Susbtrate lover',
         },
         {
-          name: 'Fredy',
-          picture: '/img/team/Fredy.jpg',
-          description:
-            'DragonStake founder, inflexible product owner and sysadmin guru',
+          name: 'Nhi Y',
+          picture: '/img/team/ynhi.jpg',
+          description:'Nhi is our esteemed medical intuitive, behaviorist.',
         },
         {
-          name: 'Wimel',
-          picture: '/img/team/Wimel.png',
-          description: 'DelegaNetworks founder, i18n and Colony DAO master',
+          name: 'Thanh Ba',
+          picture: '/img/team/thanh.jpg',
+          description: 'Gravitoncoin founder, Mobile developer',
         },
         {
-          name: 'Scriptonita',
+          name: 'Le Phuc',
           picture: '/img/team/Scriptonita.jpg',
           description: 'Frontend developer & javascript/vue/react ninja',
-        },
-        {
-          name: 'Diego',
-          picture: '/img/team/Diego.jpg',
-          description: 'Black belt javascript/vue developer and docker master',
-        },
-        {
-          name: 'Ana',
-          picture: '/img/team/Ana.jpg',
-          description:
-            'Full stack blockchain developer and beloved pr reviewer',
-        },
+        }
       ],
     }
   },

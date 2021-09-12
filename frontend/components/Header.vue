@@ -19,9 +19,9 @@
       <b-navbar-toggle target="nav-collapse" />
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item right to="/polkastats-validator">{{
+          <!-- <b-nav-item right to="/polkastats-validator">{{
             $t('layout.default.validator')
-          }}</b-nav-item>
+          }}</b-nav-item> -->
           <b-nav-item right to="/validators">{{
             $t('layout.default.validators')
           }}</b-nav-item>
@@ -54,11 +54,11 @@
             /> -->
             {{ network.name }}
           </template>
-          <b-dropdown-item href="https://kusama.polkastats.io">
+          <b-dropdown-item href="#">
             <img class="network-logo" src="/img/networks/icons/kusama.svg" />
             KUSAMA
           </b-dropdown-item>
-          <b-dropdown-item href="https://polkastats.io">
+          <b-dropdown-item href="#">
             <img class="network-logo" src="/img/networks/icons/polkadot.svg" />
             POLKADOT
           </b-dropdown-item>

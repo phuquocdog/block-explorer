@@ -87,12 +87,12 @@ export default {
   },
   head() {
     return {
-      title: 'PolkaStats NG block explorer',
+      title: 'Phu Quoc Dog block explorer',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'PolkaStats block explorer',
+          content: 'Phu Quoc Dog block explorer',
         },
       ],
     }

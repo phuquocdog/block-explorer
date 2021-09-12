@@ -182,6 +182,41 @@ export default {
             event(
               limit: $perPage
               offset: $offset
+              order_by: { block_number: desc, event_index: desc }
+            ) {
+              block_number
+              event_index
+              data
+              method
+              phase
+              section
+            }
+          }
+        `,
+        variables() {
+          return {
+            perPage: this.perPage,
+            offset: (this.currentPage - 1) * this.perPage,
+          }
+        },
+        result({ data }) {
+          this.events = data.event
+          if (this.filter) {
+            this.totalRows = this.events.length
+          }
+          this.loading = false
+        },
+      },
+      event_search: {
+        query: gql`
+          subscription events(
+            $blockNumber: bigint
+            $perPage: Int!
+            $offset: Int!
+          ) {
+            event(
+              limit: $perPage
+              offset: $offset
               where: { block_number: { _eq: $blockNumber } }
               order_by: { block_number: desc, event_index: desc }
             ) {

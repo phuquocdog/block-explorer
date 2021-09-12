@@ -133,7 +133,12 @@ export default {
   image: {
     provider: 'wordpress',
     wordpress: {
-      baseURL: 'https://i0.wp.com/phuquoc.dog/'
-    }
-  }
+      baseURL: 'https://i0.wp.com/phuquoc.dog/',
+    },
+  },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    //ignoreDuringBuilds: true,
+  },
 }

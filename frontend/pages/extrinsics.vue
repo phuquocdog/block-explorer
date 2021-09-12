@@ -200,6 +200,43 @@ export default {
             extrinsic(
               limit: $perPage
               offset: $offset
+              order_by: { block_number: desc, extrinsic_index: desc }
+            ) {
+              block_number
+              extrinsic_index
+              is_signed
+              signer
+              section
+              method
+              hash
+              success
+            }
+          }
+        `,
+        variables() {
+          return {
+            perPage: this.perPage,
+            offset: (this.currentPage - 1) * this.perPage,
+          }
+        },
+        result({ data }) {
+          this.extrinsics = data.extrinsic
+          if (this.filter) {
+            this.totalRows = this.extrinsics.length
+          }
+          this.loading = false
+        },
+      },
+      extrinsic_search: {
+        query: gql`
+          subscription extrinsics(
+            $blockNumber: bigint
+            $perPage: Int!
+            $offset: Int!
+          ) {
+            extrinsic(
+              limit: $perPage
+              offset: $offset
               where: { block_number: { _eq: $blockNumber } }
               order_by: { block_number: desc, extrinsic_index: desc }
             ) {

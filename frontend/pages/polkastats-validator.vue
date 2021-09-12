@@ -78,7 +78,7 @@
               <h3>Daily reward payout</h3>
               <hr />
               <p>
-                Nominate to PolkaStats and don't waste your time or funds
+                Nominate to Phu Quoc Dog and don't waste your time or funds
                 claiming your rewards, we do it for you on a daily basis.
               </p>
             </b-col>
@@ -95,7 +95,7 @@
               <hr />
               <p>
                 We strongly believe in the Substrate ecosystem contributing with
-                <a target="_blank" href="https://polkastats.io">PolkaStats</a>
+                <a target="_blank" href="https://block.phuqquo.dog">Phu Quoc Dog</a>
                 and
                 <a target="_blank" href="https://polkapulse.polkastats.io"
                   >PolkaPulse</a

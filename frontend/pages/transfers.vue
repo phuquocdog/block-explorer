@@ -237,9 +237,6 @@ export default {
       extrinsic: {
         query: gql`
           subscription extrinsic(
-            $blockNumber: bigint
-            $extrinsicHash: String
-            $fromAddress: String
             $perPage: Int!
             $offset: Int!
           ) {
@@ -247,9 +244,18 @@ export default {
               limit: $perPage
               offset: $offset
               where: {
-                method: { _eq: 'transfer' }
+                _or: [
+                  {
+                    section: { _eq: "currencies" }
+                    method: { _like: "transfer" }
+                  }
+                  {
+                    section: { _eq: "balances" }
+                    method: { _like: "transfer%" }
+                  }
+                ]
               }
-              order_by: { block_number: desc }
+              order_by: { block_number: desc, extrinsic_index: desc }
             ) {
               block_number
               section
@@ -262,6 +268,74 @@ export default {
         `,
         variables() {
           return {
+            perPage: this.perPage,
+            offset: (this.currentPage - 1) * this.perPage
+          }
+        },
+        result({ data }) {
+          this.transfers = data.extrinsic.map((transfer) => {
+            return {
+              block_number: transfer.block_number,
+              hash: transfer.hash,
+              from: transfer.signer,
+              to: JSON.parse(transfer.args)[0].id
+                ? JSON.parse(transfer.args)[0].id
+                : JSON.parse(transfer.args)[0],
+              amount: JSON.parse(transfer.args)[1],
+              success: transfer.success,
+            }
+          })
+          this.loading = false
+        },
+      },
+      extrinsic_search: {
+        query: gql`
+          subscription extrinsic(
+            $blockNumber: bigint
+            $extrinsicHash: String
+            $fromAddress: String
+            $perPage: Int!
+            $offset: Int!
+          ) {
+            extrinsic(
+              limit: $perPage
+              offset: $offset
+              where: {
+                _or: [
+                  {
+                    section: { _eq: "currencies" }
+                    method: { _like: "transfer" }
+                    block_number: { _eq: $blockNumber }
+                    hash: { _eq: $extrinsicHash }
+                    signer: { _eq: $fromAddress }
+                  }
+                  {
+                    section: { _eq: "balances" }
+                    method: { _like: "transfer%" }
+                    block_number: { _eq: $blockNumber }
+                    hash: { _eq: $extrinsicHash }
+                    signer: { _eq: $fromAddress }
+                  }
+                ]
+              }
+              order_by: { block_number: desc, extrinsic_index: desc }
+            ) {
+              block_number
+              section
+              signer
+              hash
+              args
+              success
+            }
+          }
+        `,
+        variables() {
+          return {
+            blockNumber: this.isBlockNumber(this.filter)
+              ? parseInt(this.filter)
+              : undefined,
+            extrinsicHash: this.isHash(this.filter) ? this.filter : undefined,
+            fromAddress: this.isAddress(this.filter) ? this.filter : undefined,
             perPage: this.perPage,
             offset: (this.currentPage - 1) * this.perPage,
           }

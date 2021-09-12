@@ -221,6 +221,43 @@ export default {
             block(
               limit: $perPage
               offset: $offset
+              order_by: { block_number: desc }
+            ) {
+              block_number
+              block_author
+              block_author_name
+              finalized
+              block_hash
+              total_extrinsics
+              total_events
+              timestamp
+            }
+          }
+        `,
+        variables() {
+          return {
+            perPage: this.perPage,
+            offset: (this.currentPage - 1) * this.perPage,
+          }
+        },
+        result({ data }) {
+          this.blocks = data.block
+          if (this.filter) {
+            this.totalRows = this.blocks.length
+          }
+          this.loading = false
+        },
+      },
+      block_search: {
+        query: gql`
+          subscription blocks(
+            $blockNumber: bigint
+            $perPage: Int!
+            $offset: Int!
+          ) {
+            block(
+              limit: $perPage
+              offset: $offset
               where: { block_number: { _eq: $blockNumber } }
               order_by: { block_number: desc }
             ) {
