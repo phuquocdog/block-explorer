@@ -18,7 +18,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'PolkaStats block explorer',
+        content: 'PQD block explorer',
       },
     ],
     link: [{ rel: 'icon', type: 'image/png', href: '/img/favicon.png' }],
