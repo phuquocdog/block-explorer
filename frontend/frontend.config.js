@@ -6,8 +6,10 @@ export const network = {
   ss58Format: 0,
   coinGeckoDenom: 'phuquocdog',
   nodeWs: 'wss://node.phuquoc.dog',
-  backendWs: 'ws://localhost:8082/v1/graphql',
-  backendHttp: 'http://localhost:8082/v1/graphql',
+  //backendWs: 'ws://localhost:8082/v1/graphql',
+  //backendHttp: 'http://localhost:8082/v1/graphql',
+  backendWs: 'wss://hasura.phuquoc.dog/',
+  backendHttp: 'https://hasura.phuquoc.dog',
   googleAnalytics: 'UA-144344973-1',
   theme: '@/assets/scss/themes/polkastats.scss',
   // ranking

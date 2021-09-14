@@ -93,11 +93,11 @@
               {{ $t('layout.default.built_with') }}
             </h3>
             <hr />
-            <a href="https://web3.foundation/grants/" target="_blank">
+            <a href="#" target="_blank">
               <img
-                src="/img/grant_badge.png"
+                src="/img/grant_aws.png"
                 class="grant-badge"
-                alt="Web3 foundation grants program"
+                alt="aws foundation grants program"
               />
             </a>
           </div>

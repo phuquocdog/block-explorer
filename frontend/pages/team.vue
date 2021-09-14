@@ -51,7 +51,7 @@ export default {
         },
         {
           name: 'Le Phuc',
-          picture: '/img/team/Scriptonita.jpg',
+          picture: '/img/team/phuc.jpeg',
           description: 'Frontend developer & javascript/vue/react ninja',
         }
       ],
