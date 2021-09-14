@@ -8,3 +8,7 @@ This repo fork from `polkastats.io` build for Phu Quoc Dog Network
 ## Setup
 
 See in directory docs
+
+## App Diagram
+
+![Block explorer Phu Quoc Dog](./docs/lucid.app/diagram.png)
