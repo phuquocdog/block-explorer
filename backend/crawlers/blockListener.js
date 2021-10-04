@@ -59,8 +59,11 @@ const crawler = async () => {
         totalIssuance,
         timestampMs,
       ] = await Promise.all([
-        1,
-        1,
+        api.query.staking.activeEra()
+          // @ts-ignore
+          .then((res) => (res.toJSON() ? res.toJSON().index : 0)),
+        api.query.session.currentIndex()
+          .then((res) => (res || 0)),
         api.rpc.chain.getBlock(blockHash),
         api.derive.chain.getHeader(blockHash),
         api.rpc.state.getRuntimeVersion(blockHash),
@@ -94,12 +97,12 @@ const crawler = async () => {
         ] = await Promise.all([
           api.derive.accounts.info(blockAuthor),
           api.query.system.events.at(blockHash),
-          'None',
+          api.query.electionProviderMultiPhase.currentPhase(),
         ]);
         const blockAuthorName = getDisplayName(blockAuthorIdentity.identity);
 
         // Get election status
-        const isElection = 'off';//Object.getOwnPropertyNames(chainElectionStatus.toJSON())[0] !== 'off';
+        const isElection = Object.getOwnPropertyNames(chainElectionStatus.toJSON())[0] !== 'off';
 
         // Totals
         const totalEvents = blockEvents.length || 0;
