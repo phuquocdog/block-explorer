@@ -634,10 +634,13 @@ const crawler = async (delayedStart) => {
       api.query.session.validators(),
       api.derive.staking.waitingInfo(stakingQueryFlags),
       api.query.staking.nominators.entries(),
-      api.derive.council.votes(),
-      api.derive.democracy.proposals(),
-      api.derive.democracy.referendums(),
+      [],//api.derive.council.votes(),
+      [],// api.derive.democracy.proposals(),
+      []//api.derive.democracy.referendums(),
     ]);
+
+    //console.log('----->', validatorAddresses)
+
 
     logger.debug(loggerOptions, 'Step #3');
     // eslint-disable-next-line no-underscore-dangle

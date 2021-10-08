@@ -14,45 +14,53 @@ module.exports = {
   logLevel: process.env.LOG_LEVEL || 'debug', // Use 'debug' to see DEBUG level messages
   crawlers: [
     {
-      name: 'blockListener',
-      enabled: !process.env.BLOCK_LISTENER_DISABLE,
-      crawler: './crawlers/blockListener.js',
-    },
-    {
-      name: 'blockHarvester',
-      enabled: !process.env.BLOCK_HARVESTER_DISABLE,
-      crawler: './crawlers/blockHarvester.js',
-      apiCustomTypes: process.env.API_CUSTOM_TYPES || '',
-      startDelay: parseInt(process.env.BLOCK_HARVESTER_START_DELAY_MS, 10) || 10 * 1000,
-      mode: process.env.BLOCK_HARVESTER_MODE || 'chunks',
-      chunkSize: parseInt(process.env.BLOCK_HARVESTER_CHUNK_SIZE, 10) || 10,
-      statsPrecision: parseInt(process.env.BLOCK_HARVESTER_STATS_PRECISION, 10) || 2,
-      pollingTime:
-        parseInt(process.env.BLOCK_LISTENER_POLLING_TIME_MS, 10)
-        || 60 * 60 * 1000,
-    },
-    {
       name: 'ranking',
       enabled: true,
       crawler: './crawlers/ranking.js',
-      startDelay: parseInt(process.env.RANKING_START_DELAY_MS, 10) || 15 * 60 * 1000,
-      pollingTime:
-        parseInt(process.env.RANKING_POLLING_TIME_MS, 10)
-        || 5 * 60 * 1000,
-      historySize: 84,
-      erasPerDay: 4,
-      tokenDecimals: 12,
-      featuredTimespan: 60 * 60 * 24 * 7 * 2 * 1000, // 2 weeks
-    },
-    {
-      name: 'activeAccounts',
-      enabled: !process.env.ACTIVE_ACCOUNTS_DISABLE,
-      crawler: './crawlers/activeAccounts.js',
-      startDelay: parseInt(process.env.ACTIVE_ACCOUNTS_START_DELAY_MS, 10) || 60 * 1000,
-      chunkSize: parseInt(process.env.ACTIVE_ACCOUNTS_CHUNK_SIZE, 10) || 100,
-      pollingTime:
-        parseInt(process.env.ACTIVE_ACCOUNTS_POLLING_TIME_MS, 10)
-        || 6 * 60 * 60 * 1000, // 6 hours
-    },
+      startDelay: 1,
+      chunkSize: 100,
+      pollingTime: 21600000
+    }
+    // {
+    //   name: 'blockListener',
+    //   enabled: !process.env.BLOCK_LISTENER_DISABLE,
+    //   crawler: './crawlers/blockListener.js',
+    // },
+    // {
+    //   name: 'blockHarvester',
+    //   enabled: !process.env.BLOCK_HARVESTER_DISABLE,
+    //   crawler: './crawlers/blockHarvester.js',
+    //   apiCustomTypes: process.env.API_CUSTOM_TYPES || '',
+    //   startDelay: parseInt(process.env.BLOCK_HARVESTER_START_DELAY_MS, 10) || 10 * 1000,
+    //   mode: process.env.BLOCK_HARVESTER_MODE || 'chunks',
+    //   chunkSize: parseInt(process.env.BLOCK_HARVESTER_CHUNK_SIZE, 10) || 10,
+    //   statsPrecision: parseInt(process.env.BLOCK_HARVESTER_STATS_PRECISION, 10) || 2,
+    //   pollingTime:
+    //     parseInt(process.env.BLOCK_LISTENER_POLLING_TIME_MS, 10)
+    //     || 60 * 60 * 1000,
+    // },
+    // {
+    //   name: 'ranking',
+    //   enabled: true,
+    //   crawler: './crawlers/ranking.js',
+    //   startDelay: parseInt(process.env.RANKING_START_DELAY_MS, 10) || 15 * 60 * 1000,
+    //   pollingTime:
+    //     parseInt(process.env.RANKING_POLLING_TIME_MS, 10)
+    //     || 5 * 60 * 1000,
+    //   //historySize: 84,
+    //   //erasPerDay: 4,
+    //   tokenDecimals: 12,
+    //   //featuredTimespan: 60 * 60 * 24 * 7 * 2 * 1000, // 2 weeks
+    // },
+    // {
+    //   name: 'activeAccounts',
+    //   enabled: !process.env.ACTIVE_ACCOUNTS_DISABLE,
+    //   crawler: './crawlers/activeAccounts.js',
+    //   startDelay: parseInt(process.env.ACTIVE_ACCOUNTS_START_DELAY_MS, 10) || 60 * 1000,
+    //   chunkSize: parseInt(process.env.ACTIVE_ACCOUNTS_CHUNK_SIZE, 10) || 100,
+    //   pollingTime:
+    //     parseInt(process.env.ACTIVE_ACCOUNTS_POLLING_TIME_MS, 10)
+    //     || 6 * 60 * 60 * 1000, // 6 hours
+    // },
   ],
 };
