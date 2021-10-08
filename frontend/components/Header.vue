@@ -54,9 +54,9 @@
             /> -->
             {{ network.name }}
           </template>
-          <b-dropdown-item href="#">
-            <img class="network-logo" src="/img/networks/icons/kusama.svg" />
-            KUSAMA
+          <b-dropdown-item href="https://polkadex.phuquoc.dog">
+            <img class="network-logo" src="/img/networks/icons/polkadot.svg" />
+            Pokadex
           </b-dropdown-item>
           <b-dropdown-item href="#">
             <img class="network-logo" src="/img/networks/icons/polkadot.svg" />
