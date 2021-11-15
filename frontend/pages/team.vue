@@ -42,7 +42,7 @@ export default {
         {
           name: 'Nhi Y',
           picture: '/img/team/ynhi.jpg',
-          description:'Nhi is our esteemed medical intuitive, behaviorist.',
+          description:'Nhi is our esteemed medical intuitive and Co-founder',
         },
         {
           name: 'Thanh Ba',

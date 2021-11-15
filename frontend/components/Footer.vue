@@ -107,7 +107,7 @@
           data-testid="footer-bottom"
         >
           <nuxt-link to="/">
-            {{ $t('Built by the same team behind Polkastats') }}
+            {{ $t('Built by team Phu Quoc Dog') }}
           </nuxt-link>
           <span class="mx-2">|</span> {{ $t('layout.default.built_with') }}
           <a href="https://phuquoc.dog">Basic Phu Quoc Dog Coin</a>
