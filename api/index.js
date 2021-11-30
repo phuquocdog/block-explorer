@@ -243,7 +243,7 @@ app.get('/api/rest/account_transactions', async (req, res) => {
           block_number: parseInt(row.block_number),
           from: JSON.parse(row.data)[0],
           to: JSON.parse(row.data)[1],
-	  method: method,
+	        method: method,
           amount: JSON.parse(row.data)[2],
           success: true,
           datetime: moment.unix(row.timestamp).format(), // 2021-08-06T13:53:18+00:00
@@ -274,5 +274,5 @@ app.get('/api/rest/account_transactions', async (req, res) => {
 
 // Start app
 app.listen(port, () => 
-  console.log(`PolkaStats API is listening on port ${port}.`)
+  console.log(`Phu Quoc Dog API is listening on port ${port}.`)
 );
