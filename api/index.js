@@ -213,8 +213,66 @@ app.get('/api/v1/batsignal/council-events', async (req, res) => {
   }
 });
 
+app.get('/api/rest/account_transactions', async (req, res) => {
+  try {
+    const timestamp = Math.floor((Date.now() / 1000) - 86400); // last 24h
+    const client = await getClient();
+    const query = `
+      SELECT
+        *
+      FROM event
+      WHERE
+        method = 'Transfer' AND
+        section = 'balances' AND
+        data like $1
+      ORDER BY block_number DESC
+    ;`;
+	  const id = req.query.id;
+    console.log('id' + id);
+
+    const dbres = await client.query(query, [`%${id}%`]);
+    if (dbres.rows.length > 0) {
+      const data = dbres.rows.map(row => {
+
+	      method = 'Transfer'
+        if (id == JSON.parse(row.data)[1]) {
+          method = 'Deposit'
+        }
+
+        return {
+          block_number: parseInt(row.block_number),
+          from: JSON.parse(row.data)[0],
+          to: JSON.parse(row.data)[1],
+	        method: method,
+          amount: JSON.parse(row.data)[2],
+          success: true,
+          datetime: moment.unix(row.timestamp).format(), // 2021-08-06T13:53:18+00:00
+        }
+      });
+      res.send({
+        status: true,
+        message: 'Request was successful',
+        data,
+      });
+    } else {
+      res.send({
+        status: true,
+        message: 'Request was successful',
+        data: [],
+      });
+    }
+    await client.end();
+  } catch (error) {
+
+	  console.log(error);
+    res.send({
+      status: false,
+      message: 'There was an error processing your request'
+    });
+  }
+});
 
 // Start app
 app.listen(port, () => 
-  console.log(`PolkaStats API is listening on port ${port}.`)
+  console.log(`Phu Quoc Dog API is listening on port ${port}.`)
 );
