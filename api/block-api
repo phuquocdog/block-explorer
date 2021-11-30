@@ -1,0 +1,272 @@
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
+Error: listen EADDRINUSE: address already in use :::8001
+    at Server.setupListenHandle [as _listen2] (node:net:1295:16)
+    at listenInCluster (node:net:1343:12)
+    at Server.listen (node:net:1429:7)
+    at Function.listen (/var/www/block-explorer/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/var/www/block-explorer/api/index.js:218:5)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Object.<anonymous> (/root/.nvm/versions/node/v15.5.0/lib/node_modules/pm2/lib/ProcessContainerFork.js:33:23) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 8001
+}
