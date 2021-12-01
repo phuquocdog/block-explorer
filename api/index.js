@@ -228,7 +228,6 @@ app.get('/api/rest/account_transactions', async (req, res) => {
       ORDER BY block_number DESC
     ;`;
 	  const id = req.query.id;
-    console.log('id' + id);
 
     const dbres = await client.query(query, [`%${id}%`]);
     if (dbres.rows.length > 0) {
@@ -239,12 +238,16 @@ app.get('/api/rest/account_transactions', async (req, res) => {
           method = 'Deposit'
         }
 
+        let amount = JSON.parse(row.data)[2];
+        if (amount.startsWith('0x')) {
+          amount = parseInt(amount, 16);
+        }
         return {
           block_number: parseInt(row.block_number),
           from: JSON.parse(row.data)[0],
           to: JSON.parse(row.data)[1],
 	        method: method,
-          amount: JSON.parse(row.data)[2],
+          amount: amount,
           success: true,
           datetime: moment.unix(row.timestamp).format(), // 2021-08-06T13:53:18+00:00
         }
