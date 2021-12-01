@@ -238,7 +238,7 @@ app.get('/api/rest/account_transactions', async (req, res) => {
           method = 'Deposit'
         }
 
-        let amount = JSON.parse(row.data)[2];
+        let amount = JSON.parse(row.data)[2].toString();
         if (amount.startsWith('0x')) {
           amount = parseInt(amount, 16);
         }
