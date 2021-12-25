@@ -12,7 +12,7 @@
         target="_blank"
         class="fiat mh-2"
       >
-        <strong>{{ network.tokenSymbol }}</strong> ${{ '0.0001' }} ({{
+        <strong>{{ network.tokenSymbol }}</strong> ${{ USDConversion }} ({{
           USD24hChange
         }}%)
       </a>
@@ -78,7 +78,7 @@ export default {
   },
   computed: {
     USDConversion() {
-      return parseFloat(this.$store.state.fiat.usd).toFixed(3)
+      return parseFloat(this.$store.state.fiat.usd).toFixed(5)
     },
     USD24hChange() {
       return parseFloat(this.$store.state.fiat.usd_24h_change).toFixed(2)
