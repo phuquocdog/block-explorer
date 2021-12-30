@@ -290,17 +290,12 @@ app.get('/api/rest/total_issuance', async (req, res) => {
     ;`;
     const dbres = await client.query(query, [pageSize]);
     if (dbres.rows.length > 0) {
-      const data = dbres.rows.map(row => {
-        return {
-          attributes: {
-            total_issuance: row.total_issuance
-          }
-        }
-      });
+      let total_issuance = dbres.rows[0].total_issuance;
+      total_issuance = total_issuance/10000000000;
       res.send({
         status: true,
         message: 'Request was successful',
-        data,
+        total_issuance: total_issuance
       });
     } else {
       res.send({
