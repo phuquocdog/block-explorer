@@ -22,12 +22,12 @@ export default {
   },
   head() {
     return {
-      title: 'PolkaStats block explorer',
+      title: 'Phuquocdog block explorer',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'PolkaStats block explorer',
+          content: 'Phuquocdog block explorer',
         },
       ],
     }

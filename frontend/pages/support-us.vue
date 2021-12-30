@@ -44,7 +44,7 @@
         <p>
           {{ $t('pages.support-us.are_you_a_TEXT') }}
           <a target="_blank" href="https://twitter.com/polkastats"
-            ><i class="fab fa-twitter" /> @PolkaStats</a
+            ><i class="fab fa-twitter" /> @Phuquocdog</a
           >
           {{ $t('pages.support-us.on_twitter_to_get_TEXT') }}.
         </p>

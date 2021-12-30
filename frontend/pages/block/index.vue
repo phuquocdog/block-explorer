@@ -21,12 +21,12 @@ export default {
   },
   head() {
     return {
-      title: 'PolkaStats NG block explorer',
+      title: 'Phuquocdog NG block explorer',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'PolkaStats block explorer',
+          content: 'Phuquocdog block explorer',
         },
       ],
     }

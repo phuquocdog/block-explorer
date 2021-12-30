@@ -17,7 +17,7 @@
               This step by step guide explains how to nominate on
               <a href="https://kusama.network/" target="_blank">Kusama</a> using
               <a href="https://kusama.polkastats.io/" target="_blank"
-                >PolkaStats</a
+                >Phuquocdog</a
               >
               and
               <a href="https://bit.ly/3g3HG4Q" target="_blank"
@@ -75,7 +75,7 @@
               <li>Enter a password for the account and click next.</li>
               <li>Click on "Add the account with the supplied seed".</li>
             </ul>
-            <h2 class="pt-4">3. Open PolkaStats (for Kusama)</h2>
+            <h2 class="pt-4">3. Open Phuquocdog (for Kusama)</h2>
             <hr class="pb-2" />
             <p>
               Open
@@ -84,12 +84,12 @@
               >
               in your browser and allow access to the extension.
             </p>
-            <h2 class="pt-4">4. Nominate to PolkaStats</h2>
+            <h2 class="pt-4">4. Nominate to Phuquocdog</h2>
             <hr class="pb-2" />
             <ul>
               <li>Select an account with available balance.</li>
               <li>Enter the amount you want to bond.</li>
-              <li>Search "PolkaStats" validator and click on it.</li>
+              <li>Search "Phuquocdog" validator and click on it.</li>
               <li>Click on Stake button.</li>
               <li>
                 Open Polkadot JS Extension, enter the password and click on
@@ -112,7 +112,7 @@
               <a href="https://kusama.network/" target="_blank">Kusama</a>
               usando
               <a href="https://kusama.polkastats.io/" target="_blank"
-                >PolkaStats</a
+                >Phuquocdog</a
               >
               y
               <a href="https://bit.ly/3g3HG4Q" target="_blank"
@@ -175,7 +175,7 @@
               </li>
               <li>Haz clic en "Add the account with the supplied seed".</li>
             </ul>
-            <h2 class="pt-4">3. Abre PolkaStats (versión Kusama)</h2>
+            <h2 class="pt-4">3. Abre Phuquocdog (versión Kusama)</h2>
             <hr class="pb-2" />
             <p>
               Abre
@@ -184,12 +184,12 @@
               >
               en tu navegador y permite el acceso a la extensión.
             </p>
-            <h2 class="pt-4">4. Nomina a PolkaStats</h2>
+            <h2 class="pt-4">4. Nomina a Phuquocdog</h2>
             <hr class="pb-2" />
             <ul>
               <li>Selecciona una cuenta con balance disponible.</li>
               <li>Introduce la cantidad que quieres nominar.</li>
-              <li>Busca el validador "PolkaStats" y haz clic en el.</li>
+              <li>Busca el validador "Phuquocdog" y haz clic en el.</li>
               <li>Haz clic en el botón Stake.</li>
               <li>
                 Abre Polkadot JS Extension, introduce la contraseña y haz clic

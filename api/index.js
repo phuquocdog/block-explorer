@@ -275,6 +275,48 @@ app.get('/api/rest/account_transactions', async (req, res) => {
   }
 });
 
+app.get('/api/rest/total_issuance', async (req, res) => {
+  try {
+    const pageSize = 1;
+    const pageOffset = 0;
+    const client = await getClient();
+    const query = `
+      SELECT
+        total_issuance
+      FROM block
+      WHERE finalized IS TRUE
+      ORDER BY block_number DESC
+      LIMIT $1
+    ;`;
+    const dbres = await client.query(query, [pageSize]);
+    if (dbres.rows.length > 0) {
+      const data = dbres.rows.map(row => {
+        return {
+          attributes: {
+            total_issuance: row.total_issuance
+          }
+        }
+      });
+      res.send({
+        status: true,
+        message: 'Request was successful',
+        data,
+      });
+    } else {
+      res.send({
+        status: false,
+        message: 'There was an error processing your request'
+      });
+    }
+    await client.end();
+  } catch (error) {
+    res.send({
+      status: false,
+      message: 'There was an error processing your request'
+    });
+  }
+});
+
 // Start app
 app.listen(port, () => 
   console.log(`Phu Quoc Dog API is listening on port ${port}.`)

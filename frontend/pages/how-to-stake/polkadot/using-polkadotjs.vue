@@ -83,7 +83,7 @@
               Click on "Settings" and Select "Polkadot (Live, hosted by
               Parity)", then click on "Save & Reload" button.
             </p>
-            <h2 class="pt-4">5. Nominate to PolkaStats</h2>
+            <h2 class="pt-4">5. Nominate to Phuquocdog</h2>
             <hr class="pb-2" />
             <ul>
               <li>On left menu, click on "Staking".</li>
@@ -96,7 +96,7 @@
                 profitable validators".
               </li>
               <li>
-                Double click on "PolkaStats" to add to Nominated accounts.
+                Double click on "Phuquocdog" to add to Nominated accounts.
               </li>
               <li>Click on "Bond & Nominate" button.</li>
               <li>
@@ -192,7 +192,7 @@
               Haz clic en "Settings" y selecciona "Polkadot (Live, hosted by
               Parity)", después haz clic en "Save & Reload" button.
             </p>
-            <h2 class="pt-4">5. Nomina a PolkaStats</h2>
+            <h2 class="pt-4">5. Nomina a Phuquocdog</h2>
             <hr class="pb-2" />
             <ul>
               <li>En el menú de la izquierda haz clic en "Staking".</li>
@@ -205,7 +205,7 @@
                 profitable validators".
               </li>
               <li>
-                Haz doble clic en "PolkaStats" para añadirlo a "Nominated
+                Haz doble clic en "Phuquocdog" para añadirlo a "Nominated
                 accounts".
               </li>
               <li>Haz clic en el botón "Bond & Nominate".</li>

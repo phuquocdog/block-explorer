@@ -100,13 +100,13 @@
       "remove_from_favorites": "Eliminar de Favoritos",
       "add_to_favorites": "Añadir a Favoritos",
       "identity": "Identidad",
-      "head_title": "PolkaStats - Cuentas en {networkName}",
+      "head_title": "Phuquocdog - Cuentas en {networkName}",
       "head_content": "Cuentas en {networkName}",
       "loading_data": "Cargando datos, puede tardar tiempo. Sea paciente, por favor",
       "download_csv": "Descargar en formato CSV"
     },
     "account": {
-      "head_title": "PolkaStats - {networkName} cuenta {address}",
+      "head_title": "Phuquocdog - {networkName} cuenta {address}",
       "head_content": "{networkName} cuenta {address}",
       "sent_transfers": "Transferencias enviadas",
       "received_transfers": "Transferencias recibidos"
@@ -138,7 +138,7 @@
       "reward_destination": "Destino de la recompensa",
       "nominators": "Nominadores",
       "intention": "Intenciones",
-      "head_title": "PolkaStats - Validadores e intenciones favoritas en {networkName}",
+      "head_title": "Phuquocdog - Validadores e intenciones favoritas en {networkName}",
       "head_content": "Validadores e intenciones favoritas en {networkName}"
     },
     "index": {
@@ -179,102 +179,102 @@
     },
     "blocks": {
       "title": "Bloques",
-      "head_title": "PolkaStats - Bloques en {networkName}",
+      "head_title": "Phuquocdog - Bloques en {networkName}",
       "head_content": "Bloques en {networkName}",
       "search_placeholder": "Buscar por número de bloque"
     },
     "extrinsics": {
       "title": "Extrinsics",
-      "head_title": "PolkaStats - Extrinsics en {networkName}",
+      "head_title": "Phuquocdog - Extrinsics en {networkName}",
       "head_content": "Extrinsics en {networkName}"
     },
     "transfers": {
       "title": "Transferencias",
-      "head_title": "PolkaStats - Transferencias en {networkName}",
+      "head_title": "Phuquocdog - Transferencias en {networkName}",
       "head_content": "Transferencias en {networkName}",
       "search_placeholder": "Buscar transferencia por número de bloque, hash o dirección de procedencia"
     },
     "activity": {
       "title": "Actividad",
-      "head_title": "PolkaStats - Actividad en {networkName}",
+      "head_title": "Phuquocdog - Actividad en {networkName}",
       "head_content": "Actividad en {networkName}",
       "search_placeholder": "Buscar actividad por número de bloque, hash o dirección de procedencia"
     },
     "events": {
       "title": "Eventos",
-      "head_title": "PolkaStats - Eventos en {networkName}",
+      "head_title": "Phuquocdog - Eventos en {networkName}",
       "head_content": "Eventos en {networkName}",
       "search_placeholder": "Buscar por número de bloque"
     },
     "support-us": {
       "support_polkastats": "APOYA POLKASTATS",
-      "polkastats_software_TEXT": "El software de PolkaStats es de código abierto y el servicio de hospedaje en https: //polkastats.io es proporcionado gratuitamente (como una cerveza gratis).",
-      "i_enjoy_developing_TEXT": "Disfruto desarrollando PolkaStats y proporcionando el servicio sin publicidad molesta y pienso seguir haciéndolo así :-).",
+      "polkastats_software_TEXT": "El software de Phuquocdog es de código abierto y el servicio de hospedaje en https: //polkastats.io es proporcionado gratuitamente (como una cerveza gratis).",
+      "i_enjoy_developing_TEXT": "Disfruto desarrollando Phuquocdog y proporcionando el servicio sin publicidad molesta y pienso seguir haciéndolo así :-).",
       "if_you_like_TEXT": "Si te gusta mi trabajo y quieres ayudar con los costes del servidor y el tiempo empleado en desarrollar y mantenerlo, puedes hacerlo de varias formas.",
       "feedback": "FeedBack!",
       "we_love_feedback_TEXT": "Nos encanta tener feedback de la comunidad, si encuentras un error, quieres comentar sobre algo o te gustaría que añadieramos alguna funcionalidad, por favor añade un Issue en nuestro",
       "github_repository": "repositorio de GitHub",
       "stake_in_our_validator": "Participa en nuestros validadores",
-      "this_is_an_TEXT": "Esta es la manera más fácil de ayudar a PolkaStats, echa un vistazo a nuestras guias de participación para Polkadot y Kusama para saber más.",
-      "follow_polkastats_on_twitter": "Sigue @PolkaStats en Twitter",
-      "are_you_a_TEXT": "¿Eres un feliz usuario de PolkaStats? Asegúrate de seguirnos",
+      "this_is_an_TEXT": "Esta es la manera más fácil de ayudar a Phuquocdog, echa un vistazo a nuestras guias de participación para Polkadot y Kusama para saber más.",
+      "follow_polkastats_on_twitter": "Sigue @Phuquocdog en Twitter",
+      "are_you_a_TEXT": "¿Eres un feliz usuario de Phuquocdog? Asegúrate de seguirnos",
       "on_twitter_to_get_TEXT": "en Twitter para tener las últimas actualizaciones de la plataforma",
-      "head_title": "PolkaStats - Apóyanos",
+      "head_title": "Phuquocdog - Apóyanos",
       "head_content": "Apóyanos"
     },
     "how_to_stake": {
       "title": "Como participar",
-      "head_title": "PolkaStats - Como participar",
+      "head_title": "Phuquocdog - Como participar",
       "head_content": "Como participar",
       "kusama": {
         "title": "Como participar en Kusama",
-        "head_title": "PolkaStats - Como participar en Kusama",
+        "head_title": "Phuquocdog - Como participar en Kusama",
         "head_content": "Como participar en Kusama",
         "lunie": {
           "title": "Como participar en Kusama usando Lunie",
-          "head_title": "PolkaStats - Como participar en Kusama usando Lunie",
+          "head_title": "Phuquocdog - Como participar en Kusama usando Lunie",
           "head_content": "Como participar en Kusama usando Lunie"
         },
         "polkadotjs": {
           "title": "Como participar en Kusama usando Polkadot JS",
-          "head_title": "PolkaStats - Como participar en Kusama usando Polkadot JS",
+          "head_title": "Phuquocdog - Como participar en Kusama usando Polkadot JS",
           "head_content": "Como participar en Kusama usando Polkadot JS"
         },
         "polkastats": {
-          "title": "Como participar en Kusama usando PolkaStats",
-          "head_title": "PolkaStats - Como participar en Kusama usando PolkaStats",
-          "head_content": "Como participar en Kusama usando PolkaStats"
+          "title": "Como participar en Kusama usando Phuquocdog",
+          "head_title": "Phuquocdog - Como participar en Kusama usando Phuquocdog",
+          "head_content": "Como participar en Kusama usando Phuquocdog"
         }
       },
       "polkadot": {
         "title": "Como participar en Polkadot",
-        "head_title": "PolkaStats - Como participar en Polkadot",
+        "head_title": "Phuquocdog - Como participar en Polkadot",
         "head_content": "Como participar en Polkadot",
         "lunie": {
           "title": "Como participar en Polkadot usando Lunie",
-          "head_title": "PolkaStats - Como participar en Polkadot usando Lunie",
+          "head_title": "Phuquocdog - Como participar en Polkadot usando Lunie",
           "head_content": "Como participar en Polkadot usando Lunie"
         },
         "polkadotjs": {
           "title": "Como participar en Polkadot usando Polkadot JS",
-          "head_title": "PolkaStats - Como participar en Polkadot usando Polkadot JS",
+          "head_title": "Phuquocdog - Como participar en Polkadot usando Polkadot JS",
           "head_content": "Como participar en Polkadot usando Polkadot JS"
         },
         "polkastats": {
-          "title": "Como participar en Polkadot usando PolkaStats",
-          "head_title": "PolkaStats - Como participar en Polkadot usando PolkaStats",
-          "head_content": "Como participar en Polkadot usando PolkaStats"
+          "title": "Como participar en Polkadot usando Phuquocdog",
+          "head_title": "Phuquocdog - Como participar en Polkadot usando Phuquocdog",
+          "head_content": "Como participar en Polkadot usando Phuquocdog"
         }
       }
     },
     "polkastats_validator": {
-      "title": "Validador PolkaStats",
-      "head_title": "PolkaStats - Validador PolkaStats {networkName}",
-      "head_content": "Validador PolkaStats {networkName}"
+      "title": "Validador Phuquocdog",
+      "head_title": "Phuquocdog - Validador Phuquocdog {networkName}",
+      "head_content": "Validador Phuquocdog {networkName}"
     },
     "validators": {
       "title": "Validadores",
-      "head_title": "PolkaStats - Validatores proof of stake de {networkName}",
+      "head_title": "Phuquocdog - Validatores proof of stake de {networkName}",
       "head_content": "Validatores proof of stake de {networkName}"
     }
   },

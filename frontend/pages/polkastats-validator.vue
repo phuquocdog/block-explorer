@@ -177,7 +177,7 @@
             </b-col>
           </b-row>
 
-          <h2 class="text-center my-4">¿Por qué nominar a PolkaStats?</h2>
+          <h2 class="text-center my-4">¿Por qué nominar a Phuquocdog?</h2>
 
           <b-row class="pt-4">
             <b-col md="4" class="mb-4">
@@ -202,7 +202,7 @@
               <h3>Pago diario de recompensas</h3>
               <hr />
               <p>
-                Nomina a PolkaStats y olvídate de malgastar tu tiempo o fondos
+                Nomina a Phuquocdog y olvídate de malgastar tu tiempo o fondos
                 reclamando tus recompensas, nosotros lo hacemos diariamente por
                 ti.
               </p>
@@ -220,7 +220,7 @@
               <hr />
               <p>
                 Creemos firmemente en el ecosistema Substrate contribuyendo con
-                <a target="_blank" href="https://polkastats.io">PolkaStats</a>
+                <a target="_blank" href="https://polkastats.io">Phuquocdog</a>
                 y
                 <a target="_blank" href="https://polkapulse.polkastats.io"
                   >PolkaPulse</a
