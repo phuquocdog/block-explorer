@@ -83,12 +83,10 @@ const harvestBlock = async (api, client, blockNumber) => {
       api.derive.chain.getHeader(blockHash),
       api.query.balances.totalIssuance.at(blockHash),
       api.rpc.state.getRuntimeVersion(blockHash),
-      api.query.staking.activeEra.at(blockHash)
-        .then((res) => (res.toJSON() ? res.toJSON().index : 0)),
-      api.query.session.currentIndex.at(blockHash)
-        .then((res) => (res || 0)),
-      api.query.electionProviderMultiPhase.currentPhase.at(blockHash),
-      api.query.timestamp.now.at(blockHash),
+      1,
+      1,
+      'None',
+      api.query.timestamp.now.at(blockHash)
     ]);
 
     const blockAuthor = blockHeader.author || '';
@@ -97,7 +95,7 @@ const harvestBlock = async (api, client, blockNumber) => {
     const timestamp = Math.floor(timestampMs / 1000);
     const { parentHash, extrinsicsRoot, stateRoot } = blockHeader;
     // Get election status
-    const isElection = Object.getOwnPropertyNames(chainElectionStatus.toJSON())[0] !== 'off';
+    const isElection = 'off';
 
     // Store block extrinsics (async)
     processExtrinsics(

@@ -3,7 +3,7 @@ require('dotenv').config();
 
 module.exports = {
   substrateNetwork: process.env.SUBSTRATE_NETWORK || 'phuquocdog',
-  wsProviderUrl: process.env.WS_PROVIDER_URL || 'wss://rpc01.phuquoc.dog',
+  wsProviderUrl: process.env.WS_PROVIDER_URL || 'wss://rpc.phuquoc.dog',
   postgresConnParams: {
     user: process.env.POSTGRES_USER || 'polkastats',
     host: process.env.POSTGRES_HOST || 'postgres',
